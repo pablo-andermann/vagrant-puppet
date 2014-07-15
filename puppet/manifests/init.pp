@@ -10,4 +10,4 @@ file { '/var/www/':
   ensure => 'directory',
 }
 
-include nginx, php, mysql, memcached
+include nginx, php, mysql, memcached, varnish
