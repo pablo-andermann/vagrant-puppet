@@ -3,7 +3,7 @@ class nginx {
 	# Symlink guest /var/www/app to host /vagrant
 	file { '/var/www/app':
 	  ensure  => 'link',
-	  target  => '/vagrant/app',
+	  target  => '/vagrant/repo_root/app',
 	}
 
 	package { 'nginx':
