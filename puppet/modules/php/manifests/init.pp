@@ -1,6 +1,6 @@
 class php {
 
-  package { ['php5-fpm', 'php5-cli']:
+  package { ['php5-fpm', 'php5-cli', 'php5-gd']:
     ensure => present,
     require => Exec['apt-get update'],
   }
