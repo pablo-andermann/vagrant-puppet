@@ -22,7 +22,7 @@ class php {
     source  => 'puppet:///modules/php/apc.ini',
 	mode    => '644',
 	group   => 'root',
-    require => Package['php5-apc'],
+    require => Package['php-apc'],
     notify  => Service['php5-fpm'],
   }
 }
